@@ -45,19 +45,12 @@
       }
     },
     {
-      "id": 10,
-      "name": "Jayesh",
-      "gender": "M",
-      "salary": 1000000,
-      "startDate": {
-        "year": 2020,
-        "month": 11,
-        "day": 5
-      }
+      "name": "Harry",
+      "salary": "5000",
+      "id": 10
     },
     {
       "name": "Harry",
-      "Gender": "M",
       "salary": "5000",
       "id": 11
     }
