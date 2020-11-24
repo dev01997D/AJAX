@@ -27,26 +27,28 @@ function makeAJAXcall(methodType, url, callback, async = true, data = null) {
     console.log(methodType + " request sent to server at " + showTime());
 }
 
-const getURL = "http://localhost:3000/employees/1";
+const getURL = "http://localhost:3000/employees/11";
 function getUserDetails(data) {
     console.log("Get user data at: " + showTime() + ": DATA : " + data);
 }
+// GET call
 makeAJAXcall("GET", getURL, getUserDetails, true);
 console.log("Made GET AJAX call to server at " + showTime());
 
-const deleteURL = "http://localhost:3000/employees/3";
+//Delete call
+const deleteURL = "http://localhost:3000/employees/12";
 function userDeleted(data) {
     console.log("User Deleted at: " + showTime() + " data: " + data);
 }
-
 makeAJAXcall("DELETE", deleteURL, userDeleted, false);
+//Delete call is made synchronus to avoid conflicts, so make post call executed only after delete
 console.log("Made DELETE AJAX call to server at " + showTime());
 
+//Post call
 const postURL = "http://localhost:3000/employees";
-const emplData = { "name": "Harry", "salary": "5000" };
+const emplData = { "name": "Mansa", "Gender": "F", "salary": "5000" };
 function userAdded(data) {
     console.log("User Adde at: " + showTime() + " data: " + data);
 }
-
 makeAJAXcall("POST", postURL, userAdded, true, emplData);
 console.log("Made POST AJAX call to server at " + showTime());
