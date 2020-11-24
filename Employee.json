@@ -1,28 +1,6 @@
 {
   "employees": [
     {
-      "id": 1,
-      "name": "Mali",
-      "gender": "M",
-      "salary": 1000000,
-      "startDate": {
-        "year": 2017,
-        "month": 8,
-        "day": 16
-      }
-    },
-    {
-      "id": 4,
-      "name": "Jayesh",
-      "gender": "M",
-      "salary": 1000000,
-      "startDate": {
-        "year": 2020,
-        "month": 11,
-        "day": 5
-      }
-    },
-    {
       "id": 6,
       "name": "DevS",
       "gender": "M",
@@ -76,11 +54,6 @@
         "month": 11,
         "day": 5
       }
-    },
-    {
-      "name": "Harry",
-      "salary": "5000",
-      "id": 11
     }
   ]
 }
